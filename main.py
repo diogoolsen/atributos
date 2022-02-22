@@ -89,6 +89,20 @@ print('\nImprimindo atributos:\n')
 MC1.print_attr()
 MC2.print_attr()
 
+# Criando, externamente, novos atributos de instância 
+MC1.novo_atributo_de_instancia = 'novo_atributo_de_instancia'
+# Notar que é possível criar um novo atributo de instância
+# com o mesmo nome do atributo de classe
+MC1.atributo_de_classe = 'novo_atributo_de_instancia_V2'
+# Isso pode gerar um confusão ao tentar acessar o atributo de classe,
+# porém será retornado o novo atributo de instância.
+# Portanto, para acessar o atributo de classe, em vez de usar o 'self.', 
+# deve-se usar o '.__class__'
+
+print('\nImprimindo atributos:\n')
+MC1.print_attr()
+MC2.print_attr()
+
 print('\nImprimindo Dicionários:\n')
 
 print(MinhaClasse.__dict__)
