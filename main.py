@@ -48,6 +48,7 @@ class MinhaClasse():
         # Acessando atributo de Instância
         # Repare no uso do 'self.' para acessar o atributo.
         print('\t', self.atributo_de_instancia)
+
         # Acessando atributos de Método
         # Sem uso do 'self.'.
         print('\t', atributo_de_metodo)
